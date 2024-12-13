@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Геолокация и Хранилища</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Геолокация и Хранилища</h2>
+        <div id="coordinates" class="coordinates"></div>
+        <button id="getLocationBtn">определить местоположение</button>
+
+        <form id="commentForm">
+            <input type="text" id="commentInput" placeholder="введите коммент" required>
+            <div class="button-container">
+                <button type="submit">сохранить в LocalStorage</button>
+                <button id="saveToIndexedDBBtn">сохранить в IndexedDB</button>
+            </div>
+        </form>
+        
+        <div id="commentsList" class="comments-section"></div>
+        <button id="viewFromIndexedDBBtn">просмотреть из IndexedDB</button>
+        <div id="indexedDBList" class="comments-section"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
